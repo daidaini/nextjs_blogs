@@ -7,7 +7,7 @@ export const generateStaticParams = async () => allWeeklies.map((item) => ({ slu
 export const generateMetadata = async ({ params }) => {
   const weekly = allWeeklies.find((item) => item.slug === params.slug);
   return {
-    title: `${weekly.title} - Paranoid_K's Weekly`,
+    title: `${weekly.title} - daidaini's weekly`,
     description: weekly.description,
   };
 };

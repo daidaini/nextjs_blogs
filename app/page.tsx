@@ -26,12 +26,12 @@ export default async function Page() {
         <h1
           className={`flex flex-col text-3xl text-black leading-normal tracking-wider ${font.className}`}
         >
-          <span>Hello,</span>
-          <span>I&apos;m Paranoid_K</span>
+          <span>Here is daidaini</span>
         </h1>
         <div className="mt-6 text-gray-900 space-y-1.5">
+          <p>🤩 Keep finding something fun to do</p>
+          {/*
           <p>🧑‍💻 前端开发者 / Front-end Developer</p>
-          <p>🤩 正在做一些有趣的事 / Working on something interesting</p>
           <p>
             🥰{' '}
             <a href="https://sotake.com" target="_blank" className="hover:underline">
@@ -42,6 +42,7 @@ export default async function Page() {
               kee.so
             </a>
           </p>
+          */}
         </div>
         <Social />
       </div>
