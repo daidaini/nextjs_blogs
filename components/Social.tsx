@@ -8,7 +8,7 @@ const Social: FC = () => {
     <div className="mt-6 flex items-center space-x-3">
       <Link
         className="block p-1.5 rounded-full text-white bg-[#171515] transition-opacity hover:opacity-75"
-        href="https://github.com/daidaini"
+        href="https://github.com/zejun"
         target="_blank"
         title="Github"
       >

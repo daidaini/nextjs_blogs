@@ -26,7 +26,7 @@ export default async function Page() {
         <h1
           className={`flex flex-col text-3xl text-black leading-normal tracking-wider ${font.className}`}
         >
-          <span>Here is daidaini</span>
+          <span>Here is zejun</span>
         </h1>
         <div className="mt-6 text-gray-900 space-y-1.5">
           <p>🤩 Keep finding something fun to do</p>

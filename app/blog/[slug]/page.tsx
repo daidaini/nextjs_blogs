@@ -7,7 +7,7 @@ export const generateStaticParams = async () => allBlogs.map((item) => ({ slug: 
 export const generateMetadata = async ({ params }) => {
   const blog = allBlogs.find((item) => item.slug === params.slug);
   return {
-    title: `${blog.title} - daidaini's blogs`,
+    title: `${blog.title} - zejun's blogs`,
     description: blog.description,
     keywords: blog.tags.join(', '),
   };
