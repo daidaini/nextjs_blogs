@@ -13,8 +13,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'zejun',
-  description: 'zejun 的个人站点，关于前端、JavaScript 等',
-  authors: [{ name: 'zejun', url: 'https://somedomainaddr' }],
+  description: 'zejun 的个人站点，关于coding，关于life',
+  authors: [{ name: 'zejun', url: 'http://www.zejunyu.com' }],
   other: {
     'baidu-site-verification': 'codeva-vCZMO1BPzq',
   },
