@@ -41,9 +41,9 @@ export const Blog = defineDocumentType(() => ({
   },
 }));
 
-export const Weekly = defineDocumentType(() => ({
-  name: 'Weekly',
-  filePathPattern: './weekly/**.md',
+export const notes = defineDocumentType(() => ({
+  name: 'notes',
+  filePathPattern: './notes/**.md',
   contentType: 'mdx',
   fields: {
     title: {
@@ -62,18 +62,18 @@ export const Weekly = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: 'string',
-      resolve: (weekly) => `/weekly/${weekly._raw.sourceFileName.replace('.md', '')}`,
+      resolve: (notes) => `/notes/${notes._raw.sourceFileName.replace('.md', '')}`,
     },
     slug: {
       type: 'string',
-      resolve: (weekly) => weekly._raw.sourceFileName.replace('.md', ''),
+      resolve: (notes) => notes._raw.sourceFileName.replace('.md', ''),
     },
   },
 }));
 
 export default makeSource({
   contentDirPath: './content',
-  documentTypes: [Blog, Weekly],
+  documentTypes: [Blog, notes],
   mdx: {
     rehypePlugins: [
       [rehypePrettyCode, { theme: 'github-dark' }],

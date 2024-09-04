@@ -13,7 +13,7 @@ const LIST = [
   },
   {
     title: '杂记',
-    href: '/weekly',
+    href: '/notes',
   },
   // {
   //   title: '关于',

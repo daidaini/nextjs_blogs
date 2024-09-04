@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Lato } from 'next/font/google';
 import { compareDesc } from 'date-fns';
 import List from '@/components/List';
-import { allWeeklies } from 'contentlayer/generated';
+import { allNotes } from 'contentlayer/generated';
 
 const font = Lato({
   weight: '700',
@@ -10,11 +10,11 @@ const font = Lato({
 });
 
 export const metadata: Metadata = {
-  title: `zejun's weekly`,
+  title: `my notes for life `,
 };
 
 export default async function Page() {
-  const weeklyList = allWeeklies.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+  const weeklyList = allNotes.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
 
   return (
     <>

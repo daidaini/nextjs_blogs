@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from 'lucide-react';
 import { compareDesc } from 'date-fns';
 import Social from '@/components/Social';
 import List from '@/components/List';
-import { allBlogs, allWeeklies } from 'contentlayer/generated';
+import { allBlogs, allNotes } from 'contentlayer/generated';
 
 const font = Anton({
   weight: '400',
@@ -12,7 +12,7 @@ const font = Anton({
 });
 
 export default async function Page() {
-  const weeklyList = allWeeklies
+  const weeklyList = allNotes
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 5);
 
@@ -64,7 +64,7 @@ export default async function Page() {
           <h2 className="font-medium text-xl text-gray-800">生活杂记</h2>
           <Link
             className="text-gray-400 transition-colors hover:text-gray-600"
-            href="/weekly"
+            href="/notes"
             title="查看全部"
           >
             <ArrowUpRightIcon size={20} />
