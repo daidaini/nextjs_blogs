@@ -1,6 +1,6 @@
 ---
 title: C++11线程库
-date: 2021-07-30 09:59:29
+date: 2021-07-30
 description: 现代C++的线程库使用
 tags:
   - c++
@@ -285,11 +285,4 @@ private:
 - 最后，析构函数，主要是确保开关置为true，启动的线程函数可以正常运行结束。
 
 
-
-
-**参考:**
-
-[C++11 (三) - std::function、std::bind、std::ref](https://blog.csdn.net/chenwh_cn/article/details/116492680)
-
-[C++11 std::thread detach()与join()用法总结](https://blog.csdn.net/weixin_44862644/article/details/115765250)
 
