@@ -24,6 +24,9 @@ export default async function Page() {
         >
           博客 / Blog
         </h1>
+        <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+          我会在这分享自己折腾时的技术心得
+        </p>
       </div>
 
       <List data={blogList} />
