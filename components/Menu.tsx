@@ -12,7 +12,7 @@ const LIST = [
     href: '/blog',
   },
   {
-    title: '周刊',
+    title: '杂记',
     href: '/weekly',
   },
   // {
