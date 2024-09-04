@@ -130,7 +130,7 @@ std::async(launch::async, ThreadFunc);
 std::async(launch::async, ThreadFunc, param1, param2...);
 ```
 
-std::async 方法有返回值，类型是std::future<T>
+std::async 方法有返回值，类型是 `std::future<T>`
 
 ```c++
 string ThreadFuncStr(int data)
@@ -268,7 +268,7 @@ private:
 
 - 存储队列，使用queue，满足先进先出
 
-- 线程任务，统一使用 函数模板 std::function<void()> ，这样，后续再配合std::bind，就可以执行所有带参数和不带参数的线程函数
+- 线程任务，统一使用 函数模板 `std::function<void()>` ，这样，后续再配合std::bind，就可以执行所有带参数和不带参数的线程函数
 
 - 构造的时候，直接启动对应数量的线程，每个线程的运行都封装在ThreadFunc
 
