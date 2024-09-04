@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import { IconBrandGithub, IconMail, IconBrandX } from '@tabler/icons-react';
+import { IconBrandGithub, IconMail, IconBrandX, IconArticle } from '@tabler/icons-react';
 import WechatDialog from './WechatDialog';
 
 const Social: FC = () => {
@@ -8,7 +8,7 @@ const Social: FC = () => {
     <div className="mt-6 flex items-center space-x-3">
       <Link
         className="block p-1.5 rounded-full text-white bg-[#171515] transition-opacity hover:opacity-75"
-        href="https://github.com/zejun"
+        href="https://github.com/daidaini"
         target="_blank"
         title="Github"
       >
@@ -30,6 +30,14 @@ const Social: FC = () => {
         <IconBrandX size={20} />
       </Link>
       <WechatDialog />
+
+      <a
+        className="block p-1.5 rounded-full text-white bg-[#e86125] transition-colors hover:opacity-75"
+        href="https://daidaini.github.io/"
+        title="我的博客"
+      >
+        <IconArticle size={20} />
+      </a>
     </div>
   );
 };

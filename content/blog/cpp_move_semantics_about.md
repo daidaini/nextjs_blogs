@@ -1,5 +1,5 @@
 ---
-title: 理解CPP的移动语义
+title: modern c++ 的移动语义
 date: 2023-01-31
 description: C11中引入的移动语义，对其进行试验和理解
 tags:

@@ -1,5 +1,5 @@
 ---
-title: C指针的理解
+title: 怎么理解C指针
 date: 2023-01-31
 description: 自己对C和c++的指针进行理解和阐释
 tags:

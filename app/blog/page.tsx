@@ -25,6 +25,7 @@ export default async function Page() {
           博客 / Blog
         </h1>
       </div>
+
       <List data={blogList} />
     </>
   );

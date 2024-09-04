@@ -45,7 +45,7 @@ const WechatDialog: FC = () => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="rounded-2xl bg-white p-2 shadow-xl">
-                  <Image src="/static/wechat_qrcode.jpg" alt="QRCode" width={200} height={200} />
+                  <Image src="/static/wechat_qrcode.png" alt="QRCode" width={200} height={200} />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
