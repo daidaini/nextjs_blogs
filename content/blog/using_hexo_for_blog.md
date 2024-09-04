@@ -8,6 +8,8 @@ tags:
     - nodejs
 ---
 
+
+
 ## 基础
 1. 安装npm
 ```shell
@@ -19,7 +21,7 @@ node -v
 npm -v
 ```
 
-2. 安装hexo-cli
+2. 安装hexo-cli 
 ```shell
 npm install -g hexo-cli
 ```
@@ -27,6 +29,7 @@ npm install -g hexo-cli
 ```shell
 hexo -v
 ```
+![](/static/blog_pics/hexo.svg)
 
 3. 创建自己的博客目录
 ```shell
