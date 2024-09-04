@@ -48,19 +48,6 @@ export default async function Page() {
       </div>
       <div className="mt-8">
         <div className="flex items-center justify-between px-3">
-          <h2 className="font-medium text-xl text-gray-800">周刊</h2>
-          <Link
-            className="text-gray-400 transition-colors hover:text-gray-600"
-            href="/weekly"
-            title="查看全部"
-          >
-            <ArrowUpRightIcon size={20} />
-          </Link>
-        </div>
-        <List data={weeklyList} className="mt-4" />
-      </div>
-      <div className="mt-8">
-        <div className="flex items-center justify-between px-3">
           <h2 className="font-medium text-xl text-gray-800">博客</h2>
           <Link
             className="text-gray-400 transition-colors hover:text-gray-600"
@@ -72,6 +59,20 @@ export default async function Page() {
         </div>
         <List data={blogList} className="mt-4" />
       </div>
+      <div className="mt-8">
+        <div className="flex items-center justify-between px-3">
+          <h2 className="font-medium text-xl text-gray-800">生活杂记</h2>
+          <Link
+            className="text-gray-400 transition-colors hover:text-gray-600"
+            href="/weekly"
+            title="查看全部"
+          >
+            <ArrowUpRightIcon size={20} />
+          </Link>
+        </div>
+        <List data={weeklyList} className="mt-4" />
+      </div>
+
     </>
   );
 }
