@@ -12,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'zejun',
-  description: 'zejun 的个人站点，关于coding，关于life',
+  title: 'coding and life',
+  description: 'zejun 的个人网站，关于coding，关于life',
   authors: [{ name: 'zejun', url: 'http://www.zejunyu.com' }],
   other: {
     'baidu-site-verification': 'codeva-vCZMO1BPzq',
@@ -28,7 +28,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
-      <Script src="https://cdn.splitbee.io/sb.js" />
     </html>
   );
 }
