@@ -26,12 +26,12 @@ export default async function Page() {
         <h1
           className={`flex flex-col text-3xl text-black leading-normal tracking-wider ${font.className}`}
         >
-          <span>Here is zejun</span>
+          <span>Coding and Life</span>
         </h1>
         <div className="mt-6 text-gray-900 space-y-1.5">
-          <p>🥰 Keep finding something fun to do</p>
+          <p> 😅 学习下使用nextjs搭建博客网站 </p>
+          <p> 🧑‍💻 zejun / a coder having a midlife crisis </p>
           {/*
-          <p>🧑‍💻 前端开发者 / Front-end Developer</p>
           <p>
             🤩{' '}
             <a href="https://sotake.com" target="_blank" className="hover:underline">
