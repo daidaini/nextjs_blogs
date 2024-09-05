@@ -50,7 +50,7 @@ export default async function Page() {
         </div>
         <Social />
       </div>
-      <div className="mt-8">
+      <div className="mt-12">
         <div className="flex items-center justify-between px-3">
           <h2 className="font-medium text-2xl text-pretty text-black">博客</h2>
           <Link
@@ -61,9 +61,9 @@ export default async function Page() {
             <AlignJustifyIcon size={20} />
           </Link>
         </div>
-        <List data={blogList} className="mt-4" />
+        <List data={blogList} className="mt-3" />
       </div>
-      <div className="mt-8">
+      <div className="mt-12">
         <div className="flex items-center justify-between px-3">
           <h2 className="font-medium text-2xl text-pretty text-black">生活杂记</h2>
           <Link
@@ -74,9 +74,9 @@ export default async function Page() {
             <AlignJustifyIcon size={20} />
           </Link>
         </div>
-        <List data={lifeList} className="mt-4" />
+        <List data={lifeList} className="mt-3" />
       </div>
-      <div className="mt-8">
+      <div className="mt-12">
         <div className="flex items-center justify-between px-3">
           <h2 className="font-medium text-2xl text-pretty text-black">学习</h2>
           <Link
@@ -87,7 +87,7 @@ export default async function Page() {
             <AlignJustifyIcon size={20} />
           </Link>
         </div>
-        <List data={learningList} className="mt-4" />
+        <List data={learningList} className="mt-3" />
       </div>
     </>
   );
