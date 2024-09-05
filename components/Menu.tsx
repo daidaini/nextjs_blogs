@@ -8,15 +8,15 @@ const menu_list = [
     href: '/',
   },
   {
-    title: '博客',
+    title: '技术博客',
     href: '/blog',
   },
   {
-    title: '杂记',
+    title: '生活杂记',
     href: '/notes',
   },
   {
-    title: '学习',
+    title: '阅读学习',
     href: '/learning',
   },
   // {
