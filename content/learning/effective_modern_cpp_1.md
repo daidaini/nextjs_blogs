@@ -2,9 +2,6 @@
 title: 《Effective Modern C++》 阅读笔记（一）
 date: 2024-09-05
 description: 《Effective Modern C++》 的阅读笔记，关于类型推导的部分
-tags:
-  - c++
-  - c++11
 ---
 
 # 类型推导

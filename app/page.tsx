@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from 'lucide-react';
 import { compareDesc } from 'date-fns';
 import Social from '@/components/Social';
 import List from '@/components/List';
-import { allBlogs, allNotes } from 'contentlayer/generated';
+import { allBlogs, allNotes, allLearnings } from 'contentlayer/generated';
 
 const font = Anton({
   weight: '400',
@@ -17,6 +17,10 @@ export default async function Page() {
     .slice(0, 5);
 
   const blogList = allBlogs
+    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+    .slice(0, 5);
+
+  const learningList = allLearnings
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 5);
 
@@ -71,6 +75,19 @@ export default async function Page() {
           </Link>
         </div>
         <List data={lifeList} className="mt-4" />
+      </div>
+      <div className="mt-8">
+        <div className="flex items-center justify-between px-3">
+          <h2 className="font-medium text-2xl text-pretty text-black">学习</h2>
+          <Link
+            className="text-blue-600 transition-colors hover:text-blue-800"
+            href="/learning"
+            title="查看全部"
+          >
+            <ArrowUpRightIcon size={20} />
+          </Link>
+        </div>
+        <List data={learningList} className="mt-4" />
       </div>
     </>
   );

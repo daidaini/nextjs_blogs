@@ -15,6 +15,10 @@ const LIST = [
     title: '杂记',
     href: '/notes',
   },
+  {
+    title: '学习',
+    href: '/learning',
+  },
   // {
   //   title: '关于',
   //   href: '/about',

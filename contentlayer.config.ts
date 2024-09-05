@@ -41,8 +41,8 @@ export const Blog = defineDocumentType(() => ({
   },
 }));
 
-export const notes = defineDocumentType(() => ({
-  name: 'notes',
+export const Notes = defineDocumentType(() => ({
+  name: 'Notes',
   filePathPattern: './notes/**.md',
   contentType: 'mdx',
   fields: {
@@ -71,9 +71,39 @@ export const notes = defineDocumentType(() => ({
   },
 }));
 
+export const Learning = defineDocumentType(() => ({
+  name: 'Learning',
+  filePathPattern: './learning/**.md',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    date: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (learning) => `/learning/${learning._raw.sourceFileName.replace('.md', '')}`,
+    },
+    slug: {
+      type: 'string',
+      resolve: (learning) => learning._raw.sourceFileName.replace('.md', ''),
+    },
+  },
+}));
+
 export default makeSource({
   contentDirPath: './content',
-  documentTypes: [Blog, notes],
+  documentTypes: [Blog, Notes, Learning],
   mdx: {
     rehypePlugins: [
       [rehypePrettyCode, { theme: 'github-dark' }],
