@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Anton } from 'next/font/google';
-import { ArrowUpRightIcon } from 'lucide-react';
+import { AlignJustifyIcon } from 'lucide-react';
 import { compareDesc } from 'date-fns';
 import Social from '@/components/Social';
 import List from '@/components/List';
@@ -14,15 +14,15 @@ const font = Anton({
 export default async function Page() {
   const lifeList = allNotes
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-    .slice(0, 5);
+    .slice(0, 3);
 
   const blogList = allBlogs
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-    .slice(0, 5);
+    .slice(0, 6);
 
   const learningList = allLearnings
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-    .slice(0, 5);
+    .slice(0, 3);
 
   return (
     <>
@@ -58,7 +58,7 @@ export default async function Page() {
             href="/blog"
             title="查看全部"
           >
-            <ArrowUpRightIcon size={20} />
+            <AlignJustifyIcon size={20} />
           </Link>
         </div>
         <List data={blogList} className="mt-4" />
@@ -71,7 +71,7 @@ export default async function Page() {
             href="/notes"
             title="查看全部"
           >
-            <ArrowUpRightIcon size={20} />
+            <AlignJustifyIcon size={20} />
           </Link>
         </div>
         <List data={lifeList} className="mt-4" />
@@ -84,7 +84,7 @@ export default async function Page() {
             href="/learning"
             title="查看全部"
           >
-            <ArrowUpRightIcon size={20} />
+            <AlignJustifyIcon size={20} />
           </Link>
         </div>
         <List data={learningList} className="mt-4" />
