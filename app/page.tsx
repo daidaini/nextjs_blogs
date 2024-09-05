@@ -12,7 +12,7 @@ const font = Anton({
 });
 
 export default async function Page() {
-  const weeklyList = allNotes
+  const lifeList = allNotes
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 5);
 
@@ -48,9 +48,9 @@ export default async function Page() {
       </div>
       <div className="mt-8">
         <div className="flex items-center justify-between px-3">
-          <h2 className="font-medium text-xl text-gray-800">博客</h2>
+          <h2 className="font-medium text-2xl text-pretty text-black">博客</h2>
           <Link
-            className="text-gray-400 transition-colors hover:text-gray-600"
+            className="text-blue-600 transition-colors hover:text-blue-800"
             href="/blog"
             title="查看全部"
           >
@@ -61,18 +61,17 @@ export default async function Page() {
       </div>
       <div className="mt-8">
         <div className="flex items-center justify-between px-3">
-          <h2 className="font-medium text-xl text-gray-800">生活杂记</h2>
+          <h2 className="font-medium text-2xl text-pretty text-black">生活杂记</h2>
           <Link
-            className="text-gray-400 transition-colors hover:text-gray-600"
+            className="text-blue-600 transition-colors hover:text-blue-800"
             href="/notes"
             title="查看全部"
           >
             <ArrowUpRightIcon size={20} />
           </Link>
         </div>
-        <List data={weeklyList} className="mt-4" />
+        <List data={lifeList} className="mt-4" />
       </div>
-
     </>
   );
 }
