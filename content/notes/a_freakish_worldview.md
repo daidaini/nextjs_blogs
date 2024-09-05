@@ -4,7 +4,7 @@ date: 2024-09-05
 description: 翻旧文档找到的一个以前写的不知道是想作为游戏还是小说的一个世界观的设计
 ---
 
-![](/static/life_pics/great_moountains.webp)
+![](/static/weekly/issue-34-cover.jpg)
 
 ## 世界观
 

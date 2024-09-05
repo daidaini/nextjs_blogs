@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import Menu from '../components/Menu';
 import './globals.css';

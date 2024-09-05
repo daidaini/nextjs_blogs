@@ -28,7 +28,6 @@ export default async function Page() {
           我会在这分享自己折腾时的技术心得
         </p>
       </div>
-
       <List data={blogList} />
     </>
   );

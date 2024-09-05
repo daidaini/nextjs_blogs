@@ -18,17 +18,19 @@ export default async function Page() {
 
   return (
     <>
-      <div className="pt-10 pb-6 px-3">
-        <h1
-          className={`flex flex-col text-3xl text-black leading-normal tracking-wider ${font.className}`}
-        >
-          学习笔记 / Life
-        </h1>
-        <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-          我会在这分享各种读书的笔记
-        </p>
+      <div className='content'>
+        <div className="pt-10 pb-6 px-3">
+          <h1
+            className={`flex flex-col text-3xl text-black leading-normal tracking-wider ${font.className}`}
+          >
+            学习笔记 / Life
+          </h1>
+          <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+            我会在这分享各种读书的笔记
+          </p>
+        </div>
+        <List data={learningList} />
       </div>
-      <List data={learningList} />
     </>
   );
 }

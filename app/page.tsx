@@ -8,7 +8,7 @@ import { allBlogs, allNotes, allLearnings } from 'contentlayer/generated';
 
 const font = Anton({
   weight: '400',
-  subsets: ['latin'],
+  subsets: ['vietnamese'],
 });
 
 export default async function Page() {

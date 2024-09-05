@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 全局样式，用于设置背景图片 */
+body {
+    background-image: url('/static/life_pics/great_moountains.webp');
+    background-size: cover;
+    /* 根据需要调整背景大小 */
+    background-position: center;
+    background-attachment: fixed;
+    /* 背景图片固定不随滚动 */
+}
+
+/* 创建一个带透明度的叠加层 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明层叠加 */
+    z-index: -1;
+    /* 确保叠加层在内容后面 */
+}
+
+/* 对内容区域应用背景色 */
+.content {
+    background-color: rgb(163, 208, 226);
+    /* 设置白色背景覆盖图片 */
+    padding: 20px;
+    position: relative;
+    /* 保证内容区域相对于背景独立显示 */
+    z-index: 1;
+    /* 让内容层显示在背景图片之上 */
+}
