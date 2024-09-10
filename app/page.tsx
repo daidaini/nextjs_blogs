@@ -34,7 +34,7 @@ export default async function Page() {
         </h1>
         <div className="mt-6 text-gray-900 space-y-1.5">
           <p> 😅 学习下使用nextjs搭建博客网站 </p>
-          <p> 🧑‍💻 zejun / a coder having a midlife crisis </p>
+          <p> 🧑‍💻 zejun / a cufusing man can only spinning in circles </p>
           {/*
           <p>
             🤩{' '}
