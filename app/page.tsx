@@ -33,8 +33,8 @@ export default async function Page() {
           <span>Coding and Life</span>
         </h1>
         <div className="mt-6 text-gray-900 space-y-1.5">
-          <p> 😅 学习下使用nextjs搭建博客网站 </p>
-          <p> 🧑‍💻 zejun / a cufusing man can only spinning in circles </p>
+          <p> 😅 该思考下怎么进阶，怎么自己实现一个网站了 </p>
+          <p> 🤔 zejun / what is the most wonderful thing in the world? </p>
           {/*
           <p>
             🤩{' '}

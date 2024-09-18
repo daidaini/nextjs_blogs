@@ -6,13 +6,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPost = [...allBlogs, ...allNotes]
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .map((item) => ({
-      url: `https://pengtikui.cn${item.url}`,
+      url: `https://www.zejunyu.com${item.url}`,
       lastModified: new Date(),
     }));
 
   return [
     {
-      url: 'https://pengtikui.cn',
+      url: 'https://www.zejunyu.com',
       lastModified: new Date(),
     },
     ...allPost,
