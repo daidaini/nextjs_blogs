@@ -4,7 +4,7 @@ date: 2024-09-10
 description: 诗词好巨记录
 ---
 
-![](/static/weekly/issue-66-cover.jpg)
+![](/static/life_pics/girl_mountain_cat.jpg)
 
 ## 好句摘抄
 ```txt

@@ -6,6 +6,7 @@ tags:
   - web
 ---
 
+![](/static/life_pics/girl_blue_sea_2.jpg)
 
 ## 双引号
 完全匹配搜索。

@@ -7,6 +7,7 @@ tags:
   - javascript
 ---
 
+![](/static/life_pics/girl_blue_sea.jpg)
 
 ## Hooks是什么？
 React Hooks允许你在函数组件中使用 state和其他React特性，而无需编写class。
