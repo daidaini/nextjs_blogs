@@ -33,26 +33,14 @@ export default async function Page() {
           <span>Coding and Life</span>
         </h1>
         <div className="mt-6 text-gray-900 space-y-1.5">
-          <p> 😅 该思考下怎么进阶，怎么自己实现一个网站了 </p>
+          <p> 😅 多点内容创作，加油！！！😉 </p>
           <p> 🤔 zejun / what is the most wonderful thing in the world? </p>
-          {/*
-          <p>
-            🤩{' '}
-            <a href="https://sotake.com" target="_blank" className="hover:underline">
-              sotake.com
-            </a>
-            <span className="mx-1">·</span>
-            <a href="https://kee.so" target="_blank" className="hover:underline">
-              kee.so
-            </a>
-          </p>
-          */}
         </div>
         <Social />
       </div>
       <div className="mt-12">
         <div className="flex items-center justify-between px-3">
-          <h2 className="font-medium text-2xl text-pretty text-black">博客</h2>
+          <h2 className="font-bold text-3xl text-center text-gray-900">技术博客</h2>
           <Link
             className="text-blue-600 transition-colors hover:text-blue-800"
             href="/blog"
@@ -61,11 +49,11 @@ export default async function Page() {
             <AlignJustifyIcon size={20} />
           </Link>
         </div>
-        <List data={blogList} className="mt-3" />
+        <List data={blogList} className="mt-3 font-normal text-1xl" />
       </div>
       <div className="mt-12">
         <div className="flex items-center justify-between px-3">
-          <h2 className="font-medium text-2xl text-pretty text-black">生活杂记</h2>
+          <h2 className="font-bold text-3xl text-pretty text-black">生活杂记</h2>
           <Link
             className="text-blue-600 transition-colors hover:text-blue-800"
             href="/notes"
@@ -78,7 +66,7 @@ export default async function Page() {
       </div>
       <div className="mt-12">
         <div className="flex items-center justify-between px-3">
-          <h2 className="font-medium text-2xl text-pretty text-black">学习</h2>
+          <h2 className="font-bold text-3xl text-pretty text-black">学习的事</h2>
           <Link
             className="text-blue-600 transition-colors hover:text-blue-800"
             href="/learning"

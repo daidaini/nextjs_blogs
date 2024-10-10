@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-CN" className={inter.variable}>
-      <body className="max-w-3xl mx-auto px-2">
+      <body className="max-w-4xl mx-auto px-3">
         <Menu />
         {children}
         <Footer />
