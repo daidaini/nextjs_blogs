@@ -4,7 +4,7 @@ date: 2024-08-12
 description: 统计小朋友接近ADHD的症状，观察
 ---
 
-![](/static/weekly/issue-14-cover.jpg)
+![](/static/weekly/issue-59-cover.jpg)
 
 小朋友已经6周岁了，很多表现让人觉得跟ADHD很像，在此做了点记录。
 

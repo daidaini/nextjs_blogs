@@ -7,8 +7,6 @@ tags:
   - javascript
 ---
 
-![](/static/life_pics/girl_blue_sea.jpg)
-
 ## Hooks是什么？
 React Hooks允许你在函数组件中使用 state和其他React特性，而无需编写class。
 简单说，Hooks 就是一些函数，可以让你在函数组件中 "钩入" React 的 state 和生命周期等特性。
@@ -199,7 +197,7 @@ function Example() {
   );
 }
 ```
-
+![](/static/life_pics/girl_blue_sea.jpg)
 
 ## 其他
 ### useContext
@@ -224,3 +222,4 @@ function Example() {
 
 ### useCallback
 缓存回调函数，避免不必要的重新渲染
+
