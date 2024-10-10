@@ -4,7 +4,7 @@
 
 /* 全局样式，用于设置背景图片 */
 body {
-    background-image: url('/static/life_pics/great_moountains.webp');
+    background-image: url('/static/life_pics/village_sunset_girl.jpg');
     background-size: cover;
     /* 根据需要调整背景大小 */
     background-position: center;
